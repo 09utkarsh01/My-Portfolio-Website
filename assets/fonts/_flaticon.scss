@@ -1,0 +1,66 @@
+    /*
+    Flaticon icon font: Flaticon
+    Creation date: 28/01/2019 13:25
+    */
+
+    @font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff2") format("woff2"),
+       url("./Flaticon.woff") format("woff"),
+       url("./Flaticon.ttf") format("truetype"),
+       url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+    .fi:before{
+        display: inline-block;
+  font-family: "Flaticon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+    }
+
+    .flaticon-laptop:before { content: "\f100"; }
+.flaticon-web-programming:before { content: "\f101"; }
+.flaticon-color:before { content: "\f102"; }
+.flaticon-smartphone:before { content: "\f103"; }
+.flaticon-settings-gears:before { content: "\f104"; }
+.flaticon-support:before { content: "\f105"; }
+.flaticon-placeholder:before { content: "\f106"; }
+.flaticon-call:before { content: "\f107"; }
+.flaticon-letter:before { content: "\f108"; }
+.flaticon-left-quote:before { content: "\f109"; }
+.flaticon-right-quote:before { content: "\f10a"; }
+.flaticon-quotation-mark:before { content: "\f10b"; }
+.flaticon-play-button:before { content: "\f10c"; }
+    
+    $font-Flaticon-laptop: "\f100";
+    $font-Flaticon-web-programming: "\f101";
+    $font-Flaticon-color: "\f102";
+    $font-Flaticon-smartphone: "\f103";
+    $font-Flaticon-settings-gears: "\f104";
+    $font-Flaticon-support: "\f105";
+    $font-Flaticon-placeholder: "\f106";
+    $font-Flaticon-call: "\f107";
+    $font-Flaticon-letter: "\f108";
+    $font-Flaticon-left-quote: "\f109";
+    $font-Flaticon-right-quote: "\f10a";
+    $font-Flaticon-quotation-mark: "\f10b";
+    $font-Flaticon-play-button: "\f10c";
