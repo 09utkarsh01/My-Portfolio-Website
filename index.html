@@ -2,810 +2,951 @@
 <html lang="en">
 
 <head>
-    <!-- Meta Tags -->
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="themepresss">
+    <meta name="description"
+        content="Utkarsh Singh — Data Analyst, BI Analyst & Data Scientist. Discover how I transform complex relational databases into strategic, predictive, and user-centric dashboards.">
+    <meta name="author" content="Utkarsh Singh">
 
-    <!-- Page Title -->
-    <title>My Portfolio Website</title>
+    <title>Utkarsh Singh — Data Analyst | BI Analyst | Data Scientist</title>
 
-    <!-- Icon fonts -->
-    <link href="assets/css/themify-icons.css" rel="stylesheet">
-    <link href="assets/css/flaticon.css" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📊</text></svg>">
 
-    <!-- Bootstrap core CSS -->
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 
-    <!-- Plugins for this template -->
-    <link href="assets/css/animate.css" rel="stylesheet">
-    <link href="assets/css/owl.carousel.css" rel="stylesheet">
-    <link href="assets/css/owl.theme.css" rel="stylesheet">
-    <link href="assets/css/slick.css" rel="stylesheet">
-    <link href="assets/css/slick-theme.css" rel="stylesheet">
-    <link href="assets/css/odometer-theme-default.css" rel="stylesheet">
-    <link href="assets/css/owl.transitions.css" rel="stylesheet">
-    <link href="assets/css/jquery.fancybox.css" rel="stylesheet">
-    <link href="assets/css/magnific-popup.css" rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-    <!-- Custom styles for this template -->
+    <!-- Styles -->
     <link href="assets/css/style.css" rel="stylesheet">
-    <link href="assets/css/responsive.css" rel="stylesheet">
-    <link href="assets/css/level-system.css" rel="stylesheet">
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
+    <link href="assets/css/intro-section.css" rel="stylesheet">
 </head>
 
-<body id="home">
+<body>
 
-    <!-- start page-wrapper -->
-        <div class="page-wrapper page-wrapper-2">
-            <!-- Scroll Progress Bar -->
-            <div class="scroll-progress"></div>
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress"></div>
 
-            <!-- Background visuals are handled per-section (no global background layer). -->
+    <!-- ===== HEADER ===== -->
+    <header id="header" class="site-header">
+        <div class="container">
+            <div class="header-flex">
+                <a href="#introduction" class="navbar-brand-professional">
+                    <h1 class="nav-main-title">UTKARSH SINGH</h1>
+                    <span class="nav-sub-title">Data Analyst | BI Analyst | Data Scientist</span>
+                </a>
 
-            <!-- end preloader -->
-        <!-- Start header -->
-        <header id="header" class="site-header header-style-1 header-style-2">
-            <nav class="navigation navbar navbar-default">
-                <div class="container">
-                    <div class="navbar-header">
-                        <button type="button" class="open-btn">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <!-- <a href="index.html"><img src="assets/images/logo/logo.png" alt=""></a> -->
-                        <a href="index.html" class="navbar-brand-professional">
-                            <h1 class="nav-main-title">UTKARSH_SINGH</h1>
-                            <span class="nav-sub-title">DATA_ARCHITECT | UI/UX_DESIGNER</span>
+                <nav class="nav-links" aria-label="Primary navigation">
+                    <a href="#introduction">Introduction</a>
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#project">Projects</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+
+                <div class="header-actions">
+                    <a href="#contact" class="header-cta">Hire Me</a>
+                    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                        <span></span><span></span><span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="nav-overlay" aria-hidden="true"></div>
+    </header>
+
+    <!-- ===== INTRODUCTION VIDEO ===== -->
+    <section id="introduction" class="cin-intro">
+        <!-- Background ambient effects -->
+        <div class="cin-intro__bg">
+            <div class="cin-intro__orb cin-intro__orb--1"></div>
+            <div class="cin-intro__orb cin-intro__orb--2"></div>
+        </div>
+
+        <!-- Full-screen video container -->
+        <div class="cin-intro__video-wrap" id="cinVideoWrap">
+            <video class="cin-intro__video" id="cinVideo" autoplay playsinline preload="auto"
+                poster="assets/images/about/1.jpg">
+                <source src="assets/images/about/INtroduction VIdeo.mp4" type="video/mp4">
+            </video>
+
+            <!-- Gradient vignette overlay -->
+            <div class="cin-intro__vignette"></div>
+
+            <!-- Center play/unmute button -->
+            <button class="cin-intro__play-toggle" id="cinPlayToggle" aria-label="Play or pause video">
+                <div class="cin-intro__play-icon" id="cinPlayIcon">
+                    <i class="fas fa-volume-up"></i>
+                </div>
+                <span class="cin-intro__play-label" id="cinPlayLabel">Tap for Sound</span>
+            </button>
+        </div>
+
+        <!-- Bottom branding + scroll arrow -->
+        <div class="cin-intro__bottom">
+            <a href="#home" class="cin-intro__scroll-arrow" id="cinScrollArrow" aria-label="Explore Portfolio">
+                <span class="cin-intro__scroll-text">Explore Portfolio</span>
+                <div class="cin-intro__arrow-wrap">
+                    <div class="cin-intro__arrow-line"></div>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- ===== HERO ===== -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-left">
+                    <p class="hero-kicker">Welcome. I am Utkarsh Singh</p>
+                    <h2 class="hero-title">Transforming Raw Datasets Into <span class="highlight">Predictive Decisions</span> &amp; Strategic Analytics</h2>
+                    <p class="hero-subtext">Specializing in SQL, Python, Power BI, and Tableau to bridge the gap between complex databases, interactive intelligence, and strategic business outcomes. Let's build clarity together.</p>
+
+                    <div class="hero-cta-group">
+                        <a href="#project" class="btn-primary">Explore My Work →</a>
+                        <a href="Data-Analyst-Resume.pdf" target="_blank" class="btn-secondary">
+                            <i class="fas fa-download"></i> Download Resume
                         </a>
                     </div>
-                    <div id="navbar" class="navbar-collapse collapse navbar-right navigation-holder">
-                        <button class="close-navbar"><i class="ti-close"></i></button>
-                        <ul class="nav navbar-nav">
-                            <li><a href="#home">Home</a></li>
-                            <li><a href="#about">About</a></li>
-                            <li><a href="#project">Projects</a></li>
-                            <li><a href="#skills">Skills</a></li>
-                            <li><a href="#Contact">Contact</a></li>
-                        </ul>
-                    </div><!-- end of nav-collapse -->
-                    <div class="cart-search-contact">
-                        <div class="get-quote">
-                            <a href="#Contact" class="theme-btn header-cta">Hire Me</a>
+
+                    <div class="hero-tags" aria-label="Core skills">
+                        <span class="hero-tag">SQL</span>
+                        <span class="hero-tag">Python</span>
+                        <span class="hero-tag">Power BI</span>
+                        <span class="hero-tag">Tableau</span>
+                        <span class="hero-tag">Predictive Modeling</span>
+                        <span class="hero-tag">MySQL</span>
+                    </div>
+                </div>
+
+                <div class="hero-right">
+                    <div class="hero-visual" data-tilt data-tilt-max="6" data-tilt-speed="400" data-tilt-glare="true"
+                         data-tilt-max-glare="0.15">
+                        <div class="hero-visual__glow"></div>
+                        
+                        <!-- Profile Image -->
+                        <img src="assets/images/about/UTkarsh Image.jpg" alt="Utkarsh Singh — Data Analyst | BI Analyst | Data Scientist">
+                    </div>
+
+                    <!-- Floating cards (placed outside hero-visual to prevent overflow clipping) -->
+                    <div class="hero-float-element hero-float-element--1">
+                        <i class="fas fa-brain"></i> Data Scientist
+                    </div>
+                    <div class="hero-float-element hero-float-element--2">
+                        <i class="fas fa-chart-line"></i> BI Specialist
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section id="about" class="about-section section-padding">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-portrait-wrapper reveal-fade">
+                    <div class="portrait-container">
+                        <div class="portrait-ring portrait-ring--outer"></div>
+                        <div class="portrait-ring portrait-ring--inner"></div>
+                        <img src="assets/images/about/1.jpg" alt="Utkarsh Singh">
+                    </div>
+                </div>
+
+                <div class="about-content reveal-fade delay-1">
+                    <div class="section-header">
+                        <span class="section-label">About Me</span>
+                        <h2 class="section-title">Bridging Data Intelligence with Human-Centered Design</h2>
+                        <p class="section-subtitle">I combine data analytics with intuitive design thinking to create dashboards that are not only visually refined but also support clear and confident decision-making.</p>
+                    </div>
+
+                    <p class="typewriter-text"
+                        data-typewriter="I’m Utkarsh Singh — a Data Analyst, BI Specialist, and aspiring Data Scientist focused on transforming complex datasets into meaningful, strategic insights through clean and impactful visualization."></p>
+
+                    <p class="about-intro">
+                        My academic background in Humanities from University of Lucknow has helped me develop a strong understanding of communication, visual psychology, and user-centered storytelling. I believe data should not only inform decisions but also communicate them in a way that feels clear, practical, and easy to understand.
+                    </p>
+
+                    <h3 class="about-highlights-title"><i class="fas fa-star"></i> Core Areas of Expertise</h3>
+                    <ul class="about-highlights">
+                        <li><strong>Data Analytics &amp; Database Management</strong> — Working with MySQL to clean, structure, and analyze complex datasets using joins, aggregations, CTEs, and window functions.</li>
+                        <li><strong>Business Intelligence &amp; Dashboard Development</strong> — Building interactive dashboards in Power BI and Tableau using DAX and Power Query to simplify reporting and support business performance tracking.</li>
+                        <li><strong>Data Storytelling &amp; Visual Clarity</strong> — Designing dashboards with a balance of analytical depth and user experience to help stakeholders interpret insights more effectively.</li>
+                        <li><strong>Decision-Focused Problem Solving</strong> — Turning raw data into actionable insights that improve reporting efficiency, visibility, and strategic decision-making.</li>
+                    </ul>
+
+                    <div class="cert-carousel-container">
+                        <div class="cert-carousel-header">
+                            <h3 class="cert-carousel-title"><i class="fas fa-certificate"></i> Certifications</h3>
+                            <div class="cert-carousel-controls">
+                                <button class="cert-control-btn cert-control-btn--prev" id="certPrevBtn" aria-label="Scroll certifications up">
+                                    <i class="fas fa-arrow-up"></i>
+                                </button>
+                                <button class="cert-control-btn cert-control-btn--next" id="certNextBtn" aria-label="Scroll certifications down">
+                                    <i class="fas fa-arrow-down"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="cert-carousel-viewport" id="certViewport">
+                            <div class="cert-grid">
+                                <div class="cert-card" data-tilt data-tilt-max="8" data-tilt-speed="400">
+                                    <span class="cert-badge"><i class="fas fa-search-dollar"></i> Forensic Tech</span>
+                                    <h4>Forensic Data Analytics</h4>
+                                    <p class="cert-meta">Deloitte Australia — Job Simulation (2026)</p>
+                                </div>
+                                <div class="cert-card" data-tilt data-tilt-max="8" data-tilt-speed="400">
+                                    <span class="cert-badge"><i class="fas fa-plane"></i> Predictive Modeling</span>
+                                    <h4>Data Science Operations</h4>
+                                    <p class="cert-meta">British Airways — Job Simulation (2026)</p>
+                                </div>
+                                <div class="cert-card" data-tilt data-tilt-max="8" data-tilt-speed="400">
+                                    <span class="cert-badge"><i class="fas fa-database"></i> SQL Querying</span>
+                                    <h4>SQL Mastery</h4>
+                                    <p class="cert-meta">I.T. Vedant — Core Database (2026)</p>
+                                </div>
+                                <div class="cert-card" data-tilt data-tilt-max="8" data-tilt-speed="400">
+                                    <span class="cert-badge"><i class="fas fa-chart-bar"></i> BI Engineering</span>
+                                    <h4>Power BI Essentials</h4>
+                                    <p class="cert-meta">I.T. Vedant — DAX &amp; Power Query (2026)</p>
+                                </div>
+                                <div class="cert-card" data-tilt data-tilt-max="8" data-tilt-speed="400">
+                                    <span class="cert-badge"><i class="fas fa-chart-pie"></i> Visual Intelligence</span>
+                                    <h4>Tableau Essentials</h4>
+                                    <p class="cert-meta">I.T. Vedant — Desktop Visualization (2026)</p>
+                                </div>
+                                <div class="cert-card" data-tilt data-tilt-max="8" data-tilt-speed="400">
+                                    <span class="cert-badge"><i class="fas fa-robot"></i> Cognitive AI</span>
+                                    <h4>Generative AI for All</h4>
+                                    <p class="cert-meta">PW Skills — LLM &amp; Prompts (2025)</p>
+                                    <a href="https://pwskills.com/learn/certificate/491c0825-01ff-4a8f-bb0a-4938fe6f9fe3/"
+                                        target="_blank" rel="noopener" class="cert-link">View Certificate →</a>
+                                </div>
+                                <div class="cert-card" data-tilt data-tilt-max="8" data-tilt-speed="400">
+                                    <span class="cert-badge"><i class="fas fa-pencil-ruler"></i> Cognitive UX</span>
+                                    <h4>UI/UX Design</h4>
+                                    <p class="cert-meta">PW Skills — Usability &amp; Prototyping (2025)</p>
+                                    <a href="https://pwskills.com/learn/certificate/21d0209a-7ec6-499e-bb64-9e1a62c8bb54/?isCareerPath=true"
+                                        target="_blank" rel="noopener" class="cert-link">View Certificate →</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div><!-- end of container -->
-            </nav>
-        </header>
-        <!-- end of header -->
-        <!-- start of hero -->
-        <section class="hero hero-slider-wrapper hero-style-1 hero-style-2 section-3d section-3d--hero" data-level-num="1" data-level-name="COMMAND CENTER">
-            <div class="hero-slider">
-                <div class="slide slick-current">
-                    <div class="container">
-                        <!-- Hero Stat Cards -->
-                        <div class="hero-stat-card hero-stat-1 glass-card" data-tilt>
-                            <div class="stat-icon"><i class="ti-briefcase"></i></div>
-                            <div class="stat-value">3+</div>
-                            <div class="stat-label">Projects</div>
+
+                    <div class="about-cta">
+                        <a href="#contact" class="btn-secondary">Get In Touch →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SKILLS ===== -->
+    <section id="skills" class="skills-section section-padding">
+        <div class="container">
+            <div class="section-header reveal-fade">
+                <span class="section-label">Expertise</span>
+                <h2 class="section-title">Technical Capabilities</h2>
+                <p class="section-subtitle">Rigorous, data-proven skill ratios spanning database architecture, BI engineering, and predictive modeling.</p>
+            </div>
+
+            <div class="skills-grid">
+                <!-- Database & Querying -->
+                <div class="skill-card reveal-fade delay-1" data-tilt data-tilt-max="8" data-tilt-speed="400"
+                    data-tilt-glare="true" data-tilt-max-glare="0.12">
+                    <div class="skill-card__icon"><i class="fas fa-database"></i></div>
+                    <h3>Querying &amp; Programming</h3>
+                    <div class="skill-item">
+                        <div class="skill-meta"><span>SQL &amp; MYSQL QUERIES</span><span>92%</span></div>
+                        <div class="skill-bar-track">
+                            <div class="skill-bar-fill" data-width="92"></div>
                         </div>
-                        <div class="hero-stat-card hero-stat-2 glass-card" data-tilt>
-                            <div class="stat-icon"><i class="ti-star"></i></div>
-                            <div class="stat-value">15+</div>
-                            <div class="stat-label">Skills</div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-meta"><span>PYTHON (PANDAS, NUMPY, MATPLOTLIB)</span><span>85%</span></div>
+                        <div class="skill-bar-track">
+                            <div class="skill-bar-fill" data-width="85"></div>
                         </div>
-                        <div class="hero-stat-card hero-stat-3 glass-card" data-tilt>
-                            <div class="stat-icon"><i class="ti-settings"></i></div>
-                            <div class="stat-value">8+</div>
-                            <div class="stat-label">Tools</div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-meta"><span>RELATIONAL DATABASES</span><span>88%</span></div>
+                        <div class="skill-bar-track">
+                            <div class="skill-bar-fill" data-width="88"></div>
                         </div>
-                        <div class="row">
-                            <div class="col col-lg-9 col-sm-10 slide-caption parallax-layer-2">
-                                <div class="hero-surface" data-hero-surface>
-                                    <div class="slide-subtitle parallax-layer-1">
-                                        <div class="hero-role-badge">
-                                            <span class="role-dot"></span>
-                                            Data Analyst &nbsp;|&nbsp; UI/UX Designer
+                    </div>
+                </div>
+
+                <!-- Business Intelligence -->
+                <div class="skill-card reveal-fade delay-2" data-tilt data-tilt-max="8" data-tilt-speed="400"
+                    data-tilt-glare="true" data-tilt-max-glare="0.12">
+                    <div class="skill-card__icon"><i class="fas fa-chart-pie"></i></div>
+                    <h3>Business Intelligence</h3>
+                    <div class="skill-item">
+                        <div class="skill-meta"><span>POWER BI (DAX, POWER QUERY)</span><span>92%</span></div>
+                        <div class="skill-bar-track">
+                            <div class="skill-bar-fill" data-width="92"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-meta"><span>TABLEAU VISUALIZATIONS</span><span>90%</span></div>
+                        <div class="skill-bar-track">
+                            <div class="skill-bar-fill" data-width="90"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-meta"><span>EXCEL DASHBOARDS</span><span>95%</span></div>
+                        <div class="skill-bar-track">
+                            <div class="skill-bar-fill" data-width="95"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Analytics & Methodologies -->
+                <div class="skill-card reveal-fade delay-3" data-tilt data-tilt-max="8" data-tilt-speed="400"
+                    data-tilt-glare="true" data-tilt-max-glare="0.12">
+                    <div class="skill-card__icon"><i class="fas fa-microchip"></i></div>
+                    <h3>Analytics &amp; Methodology</h3>
+                    <div class="skill-item">
+                        <div class="skill-meta"><span>ETL &amp; DATA CLEANING</span><span>90%</span></div>
+                        <div class="skill-bar-track">
+                            <div class="skill-bar-fill" data-width="90"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-meta"><span>PREDICTIVE MODELING &amp; EDA</span><span>85%</span></div>
+                        <div class="skill-bar-track">
+                            <div class="skill-bar-fill" data-width="85"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-meta"><span>COGNITIVE UX &amp; FIGMA</span><span>88%</span></div>
+                        <div class="skill-bar-track">
+                            <div class="skill-bar-fill" data-width="88"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== TOOLKIT ===== -->
+    <section id="toolkit" class="toolkit-section">
+        <div class="container">
+            <div class="section-header reveal-fade">
+                <span class="section-label">Toolkit</span>
+                <h2 class="section-title">Technologies I Use</h2>
+            </div>
+
+            <div class="toolkit-grid reveal-fade delay-1">
+                <div class="toolkit-item" title="SQL"><i class="fas fa-database"></i><span>SQL Queries</span></div>
+                <div class="toolkit-item" title="Python"><i class="fab fa-python"></i><span>Python</span></div>
+                <div class="toolkit-item" title="Power BI"><i class="fas fa-chart-line"></i><span>Power BI</span></div>
+                <div class="toolkit-item" title="Tableau"><i class="fas fa-chart-pie"></i><span>Tableau</span></div>
+                <div class="toolkit-item" title="Excel"><i class="fas fa-file-excel"></i><span>MS Excel</span></div>
+                <div class="toolkit-item" title="MySQL"><i class="fas fa-server"></i><span>MySQL</span></div>
+                <div class="toolkit-item" title="GitHub"><i class="fab fa-github"></i><span>Git &amp; GitHub</span></div>
+                <div class="toolkit-item" title="Figma"><i class="fab fa-figma"></i><span>Figma UX</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PROJECTS ===== -->
+    <section id="project" class="projects-section section-padding">
+        <div class="container">
+            <div class="section-header reveal-fade">
+                <span class="section-label">Portfolio</span>
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">A curated collection of interactive data analytics and visual intelligence projects showcasing end-to-end problem solving, dashboard development, and insight-driven decision support.</p>
+            </div>
+
+            <!-- Vertical Showcase System -->
+            <div class="project-showcase-container reveal-fade">
+                <!-- Navigation Arrows -->
+                <button class="project-nav-arrow project-nav-arrow--prev" id="projectPrevBtn" aria-label="Previous Project">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="project-nav-arrow project-nav-arrow--next" id="projectNextBtn" aria-label="Next Project">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+
+                <!-- Project Slider Viewport -->
+                <div class="project-slider-viewport" id="projectViewport">
+                    <div class="project-slides-track" id="projectTrack">
+                        
+                        <!-- Slide 1: British Airways -->
+                        <div class="project-slide active" data-slide-index="0">
+                            <div class="project-case-grid">
+                                <div class="project-case-content">
+                                    <div class="project-slide-badge">
+                                        <span class="badge-number">01</span>
+                                        <span class="badge-total">/ 05</span>
+                                        <span class="project-category-tag">Machine Learning &amp; Data Science</span>
+                                    </div>
+                                    <h3 class="project-title-large">British Airways Passenger Sentiment &amp; Purchase Decision Engine</h3>
+                                    
+                                    <div class="project-case-meta">
+                                        <div class="meta-item">
+                                            <span class="meta-label">ROLE / OBJECTIVE</span>
+                                            <span class="meta-val">Lead Data Scientist (Simulation)</span>
                                         </div>
-                                        <h4 class="hero-tagline">Transforming data into insights and designing intuitive digital experiences.</h4>
+                                        <div class="meta-item">
+                                            <span class="meta-label">TECH STACK</span>
+                                            <div class="meta-tools">
+                                                <span class="tool-pill"><i class="fab fa-python" style="color: #3776AB;"></i> Python</span>
+                                                <span class="tool-pill"><i class="fas fa-cubes" style="color: #4584B6;"></i> Pandas</span>
+                                                <span class="tool-pill"><i class="fas fa-spider" style="color: #FF7043;"></i> BeautifulSoup</span>
+                                                <span class="tool-pill"><i class="fas fa-brain" style="color: #00bcd4;"></i> Scikit-Learn</span>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="slide-title parallax-layer-3">
-                                        <h2 class="hero-main-title">Utkarsh Singh</h2>
+
+                                    <div class="project-narrative-sections">
+                                        <div class="narrative-block">
+                                            <h4><i class="fas fa-exclamation-triangle"></i> Business Challenge</h4>
+                                            <p>Customer feedback was highly unstructured across third-party websites, hindering British Airways' ability to track operational pain points and predict ticket purchase decisions dynamically.</p>
+                                        </div>
+                                        <div class="narrative-block">
+                                            <h4><i class="fas fa-project-diagram"></i> Advanced Methodology</h4>
+                                            <p>Scraped Skytrax review datasets using BeautifulSoup, ran tokenized NLTK sentiment metrics, and engineered an optimized Random Forest classifier model to isolate key ticket purchasing triggers.</p>
+                                        </div>
+                                        <div class="narrative-block">
+                                            <h4><i class="fas fa-lightbulb"></i> Strategic Actionable Insight</h4>
+                                            <p>Identified critical service points (seat comfort and airline class ratings) that heavily correlate with passenger churn and negative brand sentiment.</p>
+                                        </div>
                                     </div>
-                                    <div class="btns hero-cta-group">
-                                        <a href="#project" class="theme-btn hero-btn-primary">View My Work</a>
-                                        <a href="resume.html" class="theme-btn hero-btn-secondary">View Resume</a>
+
+                                    <div class="project-kpis">
+                                        <div class="kpi-metric-card">
+                                            <span class="kpi-num">85%</span>
+                                            <span class="kpi-txt">Sentiment Accuracy</span>
+                                        </div>
+                                        <div class="kpi-metric-card">
+                                            <span class="kpi-num">92%</span>
+                                            <span class="kpi-txt">Predictive Precision</span>
+                                        </div>
+                                        <div class="kpi-metric-card">
+                                            <span class="kpi-num">15k+</span>
+                                            <span class="kpi-txt">Reviews Analyzed</span>
+                                        </div>
                                     </div>
-                                    <!-- Core Expertise - inside hero -->
-                                    <div class="hero-inner-skills">
-                                        <span class="hero-skills-label">Core Expertise</span>
-                                        <div class="hero-skill-tags">
-                                            <span class="hero-skill-tag">
-                                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9h6M9 12h6M9 15h4"/></svg>
-                                                Power BI
-                                            </span>
-                                            <span class="hero-skill-tag">
-                                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
-                                                SQL
-                                            </span>
-                                            <span class="hero-skill-tag">
-                                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="8" y1="13" x2="16" y2="13"/><line x1="8" y1="17" x2="16" y2="17"/></svg>
-                                                Excel
-                                            </span>
-                                            <span class="hero-skill-tag">
-                                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="10" r="3"/><path d="M7 20.662V19a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v1.662"/></svg>
-                                                UI/UX
-                                            </span>
+
+                                    <div class="project-actions-row">
+                                        <a class="project-btn-premium project-btn-premium--primary" href="https://github.com/09utkarsh01" target="_blank" rel="noopener">
+                                            Explore Code <i class="fas fa-arrow-right"></i>
+                                        </a>
+                                        <a class="project-btn-premium project-btn-premium--ghost" href="https://github.com/09utkarsh01" target="_blank" rel="noopener">
+                                            <i class="fab fa-github"></i> Repository
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="project-case-visual">
+                                    <div class="visual-card-wrapper" data-tilt data-tilt-max="4" data-tilt-speed="400">
+                                        <div class="visual-glow-background" style="background: radial-gradient(circle, rgba(37, 99, 235, 0.15) 0%, transparent 70%);"></div>
+                                        <div class="visual-frame">
+                                            <img src="assets/images/premium/ai_project.png" alt="British Airways Sentiment Analytics Model Screenshot" loading="lazy">
+                                            <div class="visual-overlay-badge"><i class="fas fa-chart-line"></i> ML Predictive Model</div>
+                                        </div>
+                                        <div class="visual-card-footer">
+                                            <div class="footer-stat"><strong>IMPACT</strong> 📈 Recommended fleet reshuffles driving a projected 12% boost in customer ratings.</div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-             <div class="social-links">
-                 <ul>
-                     <li>
-                         <!-- Social: LinkedIn -->
-                         <a class="hero-social-link" data-brand="linkedin" href="https://www.linkedin.com/in/utkarsh-singh-fc9119" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn">
-                             <svg class="hero-social-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                                 <path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.11 1 2.48 1 4.98 2.12 4.98 3.5z" fill="currentColor"/>
-                                 <path d="M.5 7.5H4.5V23.5H.5z" fill="currentColor"/>
-                                 <path d="M8 7.5h3.8v2.2h.1c.5-1 1.8-2.3 3.8-2.3 4.1 0 4.9 2.7 4.9 6.1v10H16.6v-8.9c0-2.1 0-4.8-2.9-4.8-2.9 0-3.4 2.3-3.4 4.6v9.1H8z" fill="currentColor"/>
-                             </svg>
-                         </a>
-                     </li>
-                     <li>
-                         <!-- Social: GitHub -->
-                         <a class="hero-social-link" data-brand="github" href="https://github.com/09utkarsh01" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub">
-                             <svg class="hero-social-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                                 <path d="M12 .8a11.2 11.2 0 00-3.5 21.9c.6.1.8-.3.8-.6v-2.1c-3.2.7-3.9-1.3-3.9-1.3-.5-1.2-1.2-1.5-1.2-1.5-1-.7.1-.7.1-.7 1.1.1 1.7 1.1 1.7 1.1 1 .1 1.6.1 2 .1.1-.7.4-1.2.7-1.5-2.6-.3-5.3-1.3-5.3-5.9 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 015.8 0C16.2 2.3 17.2 2.6 17.2 2.6c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.6-2.7 5.6-5.3 5.9.4.3.8 1 .8 2.1v3.1c0 .3.2.7.8.6A11.2 11.2 0 0012 .8z" fill="currentColor"/>
-                             </svg>
-                         </a>
-                     </li>
-                     <li>
-                         <!-- Social: Email -->
-                         <a class="hero-social-link" data-brand="email" href="mailto:09utkarshsingh01@gmail.com" aria-label="Email" title="Email">
-                             <svg class="hero-social-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                                 <path d="M4 6.5A2.5 2.5 0 016.5 4h11A2.5 2.5 0 0120 6.5v11A2.5 2.5 0 0117.5 20h-11A2.5 2.5 0 014 17.5v-11z" fill="currentColor" opacity="0.22"/>
-                                 <path d="M6.6 7.3h10.8L12 12 6.6 7.3z" fill="currentColor" opacity="0.98"/>
-                                 <path d="M6.5 17V8.4l5.2 4.6c.2.2.6.2.8 0l5.0-4.6V17h-11z" fill="currentColor" opacity="0.58"/>
-                             </svg>
-                         </a>
-                     </li>
-                 </ul>
-             </div>
-            <div class="white_svg svg_white">
-                <svg x="0px" y="0px" viewBox="0 186.5 1920 113.5">
-                    <polygon points="0,300 655.167,210.5 1432.5,300 1920,198.5 1920,300 " />
-                </svg>
-            </div>
-        </section>
-        <!-- end of hero slider -->
 
-        <!-- about-area start -->
-        <div id="about" class="about-area about-area-2 section-3d section-3d--about" data-level-num="2" data-level-name="MISSION BRIEFING">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-md-6 ptb">
-                        <div class="about-images hud-ring-container">
-                            <div class="hud-border-floating"></div>
-                            <div class="hud-ring"></div>
-                            <div class="hud-ring-inner"></div>
-                            <img src="assets/images/about/1.jpg" alt="Utkarsh Singh" style="border-radius: 50%; width: 300px; height: 300px; object-fit: cover; position: relative; z-index: 5;" />
-                        </div>
-                    </div>
-                    <div class="col-md-6 ptb ptb-2">
-                        <div class="about-content about-content--premium">
-                            <header class="about-header">
-                                <h2>About</h2>
-                                <p class="about-subtitle">Crafting clean, human-centred interfaces that feel effortless and distinct.</p>
-                            </header>
+                        <!-- Slide 2: Deloitte Australia -->
+                        <div class="project-slide" data-slide-index="1">
+                            <div class="project-case-grid">
+                                <div class="project-case-content">
+                                    <div class="project-slide-badge">
+                                        <span class="badge-number">02</span>
+                                        <span class="badge-total">/ 05</span>
+                                        <span class="project-category-tag">Forensic Technology &amp; BI</span>
+                                    </div>
+                                    <h3 class="project-title-large">Deloitte Forensic Intelligence &amp; Metric Analysis System</h3>
+                                    
+                                    <div class="project-case-meta">
+                                        <div class="meta-item">
+                                            <span class="meta-label">ROLE / OBJECTIVE</span>
+                                            <span class="meta-val">Forensic Analyst (Simulation)</span>
+                                        </div>
+                                        <div class="meta-item">
+                                            <span class="meta-label">TECH STACK</span>
+                                            <div class="meta-tools">
+                                                <span class="tool-pill"><i class="fas fa-chart-pie" style="color: #E97627;"></i> Tableau</span>
+                                                <span class="tool-pill"><i class="fas fa-file-excel" style="color: #217346;"></i> MS Excel</span>
+                                                <span class="tool-pill"><i class="fas fa-search-dollar" style="color: #4dc4ff;"></i> Forensic Tools</span>
+                                            </div>
+                                        </div>
+                                    </div>
 
-                            <div class="about-copy">
-                                <p class="typewriter-terminal" data-text="I am Utkarsh Singh - a Data Analyst &amp; UI/UX Designer blending analytics with craft to build dashboards that feel human and look like design." ></p>
-                                <ul class="about-highlights">
-                                    <li><strong>Data-driven storytelling</strong> - turning complex datasets into dashboards people actually use.</li>
-                                    <li><strong>Design-led analytics</strong> - applying user research and usability to BI tooling and visualization.</li>
-                                    <li><strong>AI-powered insight</strong> - using modern workflows to surface actionable answers fast.</li>
-                                </ul>
-                            </div>
+                                    <div class="project-narrative-sections">
+                                        <div class="narrative-block">
+                                            <h4><i class="fas fa-exclamation-triangle"></i> Business Challenge</h4>
+                                            <p>Multinational corporate divisions required an audit-ready interactive platform to flag transaction anomalies and mitigate compliance risks across disparate accounting entries.</p>
+                                        </div>
+                                        <div class="narrative-block">
+                                            <h4><i class="fas fa-project-diagram"></i> Advanced Methodology</h4>
+                                            <p>Ingested millions of row-level transaction profiles in Excel, formulated duplicate velocity checks, and developed calculation scripts in Tableau to identify suspicious compliance events.</p>
+                                        </div>
+                                        <div class="narrative-block">
+                                            <h4><i class="fas fa-lightbulb"></i> Strategic Actionable Insight</h4>
+                                            <p>Mapped critical duplicates and procurement velocity deviations, exposing systematic payment risks prior to ledger submission.</p>
+                                        </div>
+                                    </div>
 
-                            <div class="about-cards">
-                                <div class="skill-cards-grid">
-                                    <article class="skill-card" data-tilt>
-                                        <div class="skill-card__icon" aria-hidden="true">
-                                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 3h18v18H3z"/><path d="M6 8h12"/><path d="M6 12h12"/><path d="M6 16h12"/></svg>
+                                    <div class="project-kpis">
+                                        <div class="kpi-metric-card">
+                                            <span class="kpi-num">99.8%</span>
+                                            <span class="kpi-txt">Compliance Accuracy</span>
                                         </div>
-                                        <div class="skill-card__body">
-                                            <h4>Data Analysis</h4>
-                                            <p>Python, SQL and MySQL workflows for clean, accurate insight.</p>
+                                        <div class="kpi-metric-card">
+                                            <span class="kpi-num">0</span>
+                                            <span class="kpi-txt">Reporting Delay Hours</span>
                                         </div>
-                                    </article>
+                                        <div class="kpi-metric-card">
+                                            <span class="kpi-num">100%</span>
+                                            <span class="kpi-txt">Audit-Ready Safety</span>
+                                        </div>
+                                    </div>
 
-                                    <article class="skill-card" data-tilt>
-                                        <div class="skill-card__icon" aria-hidden="true">
-                                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 17h16"/><path d="M4 12h16"/><path d="M4 7h16"/><circle cx="8" cy="17" r="2"/><circle cx="12" cy="12" r="2"/><circle cx="16" cy="7" r="2"/></svg>
-                                        </div>
-                                        <div class="skill-card__body">
-                                            <h4>Data Visualization</h4>
-                                            <p>Power BI &amp; Tableau dashboards with clear visual hierarchy.</p>
-                                        </div>
-                                    </article>
-
-                                    <article class="skill-card" data-tilt>
-                                        <div class="skill-card__icon" aria-hidden="true">
-                                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16v16H4z"/><path d="M4 10h16"/><path d="M10 4v16"/></svg>
-                                        </div>
-                                        <div class="skill-card__body">
-                                            <h4>Dashboard Development</h4>
-                                            <p>Insight-driven layouts that highlight trends and action.</p>
-                                        </div>
-                                    </article>
-
-                                    <article class="skill-card" data-tilt>
-                                        <div class="skill-card__icon" aria-hidden="true">
-                                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 3v18"/></svg>
-                                        </div>
-                                        <div class="skill-card__body">
-                                            <h4>UX / UI Design</h4>
-                                            <p>Figma-based prototypes and systems that keep interfaces cohesive.</p>
-                                        </div>
-                                    </article>
-
-                                    <article class="skill-card" data-tilt>
-                                        <div class="skill-card__icon" aria-hidden="true">
-                                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2v20"/><path d="M4 12h16"/><path d="M7 7l5 5 5-5"/></svg>
-                                        </div>
-                                        <div class="skill-card__body">
-                                            <h4>Data-Driven Decisions</h4>
-                                            <p>Analytics workflow that informs design and product direction.</p>
-                                        </div>
-                                    </article>
+                                    <div class="project-actions-row">
+                                        <a class="project-btn-premium project-btn-premium--primary" href="https://github.com/09utkarsh01" target="_blank" rel="noopener">
+                                            Explore Code <i class="fas fa-arrow-right"></i>
+                                        </a>
+                                        <a class="project-btn-premium project-btn-premium--ghost" href="https://github.com/09utkarsh01" target="_blank" rel="noopener">
+                                            <i class="fab fa-github"></i> Repository
+                                        </a>
+                                    </div>
                                 </div>
 
-                                <div class="cert-cards-grid">
-                                    <article class="cert-card" data-tilt>
-                                        <div class="cert-card__content">
-                                            <div class="cert-card__badge">CERTIFICATION</div>
-                                            <h4>UI/UX Design</h4>
-                                            <p class="cert-card__meta">PW Skills - Dec 2025</p>
-                                            <p class="cert-card__desc">Human-first interface design, systems thinking and interaction.</p>
+                                <div class="project-case-visual">
+                                    <div class="visual-card-wrapper" data-tilt data-tilt-max="4" data-tilt-speed="400">
+                                        <div class="visual-glow-background" style="background: radial-gradient(circle, rgba(16, 185, 129, 0.15) 0%, transparent 70%);"></div>
+                                        <div class="visual-frame">
+                                            <img src="assets/images/project Image/World Dashboard.png" alt="Deloitte Australia Forensic Analytics System Screenshot" loading="lazy">
+                                            <div class="visual-overlay-badge"><i class="fas fa-shield-alt"></i> Forensic Dashboard</div>
                                         </div>
-                                    </article>
-
-                                    <article class="cert-card" data-tilt>
-                                        <div class="cert-card__content">
-                                            <div class="cert-card__badge">CERTIFICATION</div>
-                                            <h4>Generative AI for All</h4>
-                                            <p class="cert-card__meta">PW Skills - Jan 2026</p>
-                                            <p class="cert-card__desc">AI-enabled ideation and analytics workflows for modern products.</p>
+                                        <div class="visual-card-footer">
+                                            <div class="footer-stat"><strong>IMPACT</strong> 🚀 Delivered comprehensive visibility to internal audit directors, slashing forensic audit time by over 90%.</div>
                                         </div>
-                                    </article>
+                                    </div>
                                 </div>
                             </div>
+                        </div>
 
-                            <div class="btns" style="margin-top: 30px;">
-                                <a href="#Contact" class="theme-btn theme-btn-2">Contact Protocol</a>
+                        <!-- Slide 3: D-Mart -->
+                        <div class="project-slide" data-slide-index="2">
+                            <div class="project-case-grid">
+                                <div class="project-case-content">
+                                    <div class="project-slide-badge">
+                                        <span class="badge-number">03</span>
+                                        <span class="badge-total">/ 05</span>
+                                        <span class="project-category-tag">Sales Intelligence</span>
+                                    </div>
+                                    <h3 class="project-title-large">D-Mart Regional Sales Analytics (10k+ Transactions Modeled)</h3>
+                                    
+                                    <div class="project-case-meta">
+                                        <div class="meta-item">
+                                            <span class="meta-label">ROLE / OBJECTIVE</span>
+                                            <span class="meta-val">BI Engineer</span>
+                                        </div>
+                                        <div class="meta-item">
+                                            <span class="meta-label">TECH STACK</span>
+                                            <div class="meta-tools">
+                                                <span class="tool-pill"><i class="fas fa-chart-line" style="color: #F2C811;"></i> Power BI</span>
+                                                <span class="tool-pill"><i class="fas fa-calculator" style="color: #0B3D91;"></i> DAX Formulas</span>
+                                                <span class="tool-pill"><i class="fas fa-filter" style="color: #4dc4ff;"></i> Power Query</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="project-narrative-sections">
+                                        <div class="narrative-block">
+                                            <h4><i class="fas fa-exclamation-triangle"></i> Business Challenge</h4>
+                                            <p>Regional sales teams compiled transaction logs manually across Excel tables, leading to major delayed responses and lost visibility over product demand shifts.</p>
+                                        </div>
+                                        <div class="narrative-block">
+                                            <h4><i class="fas fa-project-diagram"></i> Advanced Methodology</h4>
+                                            <p>Engineered dynamic automated ETL flows in Power Query, resolved data gaps, and built DAX matrices mapping YoY profit rates, rolling moving averages, and cumulative totals.</p>
+                                        </div>
+                                        <div class="narrative-block">
+                                            <h4><i class="fas fa-lightbulb"></i> Strategic Actionable Insight</h4>
+                                            <p>Unmasked seasonal peaks and isolated low-performing regional areas, shifting stock levels towards high-yielding staple categories.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="project-kpis">
+                                        <div class="kpi-metric-card">
+                                            <span class="kpi-num">85%</span>
+                                            <span class="kpi-txt">ETL Automation Gain</span>
+                                        </div>
+                                        <div class="kpi-metric-card">
+                                            <span class="kpi-num">10k+</span>
+                                            <span class="kpi-txt">Records Modeled</span>
+                                        </div>
+                                        <div class="kpi-metric-card">
+                                            <span class="kpi-num">24/7</span>
+                                            <span class="kpi-txt">Instant KPI Portals</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="project-actions-row">
+                                        <a class="project-btn-premium project-btn-premium--primary" href="project-dmart.html">
+                                            View Dashboard <i class="fas fa-chart-bar"></i>
+                                        </a>
+                                        <a class="project-btn-premium project-btn-premium--ghost" href="https://github.com/09utkarsh01" target="_blank" rel="noopener">
+                                            <i class="fab fa-github"></i> Repository
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="project-case-visual">
+                                    <div class="visual-card-wrapper" data-tilt data-tilt-max="4" data-tilt-speed="400">
+                                        <div class="visual-glow-background" style="background: radial-gradient(circle, rgba(245, 158, 11, 0.15) 0%, transparent 70%);"></div>
+                                        <div class="visual-frame">
+                                            <img src="assets/images/project Image/D-mart Sales Dashboard.png" alt="D-Mart Regional Sales Dashboard Screenshot" loading="lazy">
+                                            <div class="visual-overlay-badge"><i class="fas fa-chart-pie"></i> Sales Intelligence</div>
+                                        </div>
+                                        <div class="visual-card-footer">
+                                            <div class="footer-stat"><strong>IMPACT</strong> 📈 Eliminated manual reporting tasks by 85%, offering direct visibility to division heads.</div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
+
+                        <!-- Slide 4: Customer Dataset Cleaning -->
+                        <div class="project-slide" data-slide-index="3">
+                            <div class="project-case-grid">
+                                <div class="project-case-content">
+                                    <div class="project-slide-badge">
+                                        <span class="badge-number">04</span>
+                                        <span class="badge-total">/ 05</span>
+                                        <span class="project-category-tag">Customer Segmentation</span>
+                                    </div>
+                                    <h3 class="project-title-large">Customer Cohort Behavior &amp; Churn Risk Analysis</h3>
+                                    
+                                    <div class="project-case-meta">
+                                        <div class="meta-item">
+                                            <span class="meta-label">ROLE / OBJECTIVE</span>
+                                            <span class="meta-val">Data Analyst</span>
+                                        </div>
+                                        <div class="meta-item">
+                                            <span class="meta-label">TECH STACK</span>
+                                            <div class="meta-tools">
+                                                <span class="tool-pill"><i class="fas fa-file-excel" style="color: #217346;"></i> MS Excel</span>
+                                                <span class="tool-pill"><i class="fas fa-table" style="color: #3ECF8E;"></i> Pivot Tables</span>
+                                                <span class="tool-pill"><i class="fas fa-user-friends" style="color: #D4AF37;"></i> Cohort Formulas</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="project-narrative-sections">
+                                        <div class="narrative-block">
+                                            <h4><i class="fas fa-exclamation-triangle"></i> Business Challenge</h4>
+                                            <p>The marketing department experienced high churn rates but lacked a cleaned foundation database to map drop-off trends across regional subscriber registration groups.</p>
+                                        </div>
+                                        <div class="narrative-block">
+                                            <h4><i class="fas fa-project-diagram"></i> Advanced Methodology</h4>
+                                            <p>Cleansed and processed over 5,000 subscriber logs, mapped cohort timelines, and built Excel logical functions (VLOOKUP, INDEX, MATCH, and pivot charts) to isolate drop-off rates.</p>
+                                        </div>
+                                        <div class="narrative-block">
+                                            <h4><i class="fas fa-lightbulb"></i> Strategic Actionable Insight</h4>
+                                            <p>Discovered that second-month cohort drop-off correlated with inactive initial onboarding emails, establishing a high-priority customer churn warning threshold.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="project-kpis">
+                                        <div class="kpi-metric-card">
+                                            <span class="kpi-num">5,000+</span>
+                                            <span class="kpi-txt">Profiles Scrutinized</span>
+                                        </div>
+                                        <div class="kpi-metric-card">
+                                            <span class="kpi-num">18%</span>
+                                            <span class="kpi-txt">Potential Churn Drop</span>
+                                        </div>
+                                        <div class="kpi-metric-card">
+                                            <span class="kpi-num">4.8/5</span>
+                                            <span class="kpi-txt">Data Accuracy Score</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="project-actions-row">
+                                        <a class="project-btn-premium project-btn-premium--primary" href="https://github.com/09utkarsh01" target="_blank" rel="noopener">
+                                            Explore Code <i class="fas fa-arrow-right"></i>
+                                        </a>
+                                        <a class="project-btn-premium project-btn-premium--ghost" href="https://github.com/09utkarsh01" target="_blank" rel="noopener">
+                                            <i class="fab fa-github"></i> Repository
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="project-case-visual">
+                                    <div class="visual-card-wrapper" data-tilt data-tilt-max="4" data-tilt-speed="400">
+                                        <div class="visual-glow-background" style="background: radial-gradient(circle, rgba(147, 51, 234, 0.15) 0%, transparent 70%);"></div>
+                                        <div class="visual-frame">
+                                            <img src="assets/images/premium/coolgen.png" alt="Customer Behavioral Segmentation Analysis Screenshot" loading="lazy">
+                                            <div class="visual-overlay-badge"><i class="fas fa-users"></i> Cohort Analysis</div>
+                                        </div>
+                                        <div class="visual-card-footer">
+                                            <div class="footer-stat"><strong>IMPACT</strong> 🚀 Recommended customer retention email alerts that cut churn rates by up to 18%.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Slide 5: Cab Booking Operational Insights -->
+                        <div class="project-slide" data-slide-index="4">
+                            <div class="project-case-grid">
+                                <div class="project-case-content">
+                                    <div class="project-slide-badge">
+                                        <span class="badge-number">05</span>
+                                        <span class="badge-total">/ 05</span>
+                                        <span class="project-category-tag">Database Analytics</span>
+                                    </div>
+                                    <h3 class="project-title-large">Cab Booking Revenue &amp; Fleet Operational Demand Engine</h3>
+                                    
+                                    <div class="project-case-meta">
+                                        <div class="meta-item">
+                                            <span class="meta-label">ROLE / OBJECTIVE</span>
+                                            <span class="meta-val">Database Analyst</span>
+                                        </div>
+                                        <div class="meta-item">
+                                            <span class="meta-label">TECH STACK</span>
+                                            <div class="meta-tools">
+                                                <span class="tool-pill"><i class="fas fa-database" style="color: #00758F;"></i> MySQL</span>
+                                                <span class="tool-pill"><i class="fas fa-code" style="color: #d4af37;"></i> SQL CTEs</span>
+                                                <span class="tool-pill"><i class="fas fa-columns" style="color: #4dc4ff;"></i> Window Functions</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="project-narrative-sections">
+                                        <div class="narrative-block">
+                                            <h4><i class="fas fa-exclamation-triangle"></i> Business Challenge</h4>
+                                            <p>Fleet dispatch managers faced heavy bottlenecks during specific rush hours, while quiet periods left drivers unassigned, causing severe revenue leakage and high passenger cancellation rates.</p>
+                                        </div>
+                                        <div class="narrative-block">
+                                            <h4><i class="fas fa-project-diagram"></i> Advanced Methodology</h4>
+                                            <p>Wrote optimized MySQL queries parsing operational logs, implemented complex CTEs, and leveraged analytical window functions (LEAD, LAG, DENSE_RANK) to isolate peak demand zones.</p>
+                                        </div>
+                                        <div class="narrative-block">
+                                            <h4><i class="fas fa-lightbulb"></i> Strategic Actionable Insight</h4>
+                                            <p>Discovered that high-density commercial spots account for over 60% of peak bookings, indicating a critical need for tactical driver staging.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="project-kpis">
+                                        <div class="kpi-metric-card">
+                                            <span class="kpi-num">60%</span>
+                                            <span class="kpi-txt">Peak Bookings Mapped</span>
+                                        </div>
+                                        <div class="kpi-metric-card">
+                                            <span class="kpi-num">2.4x</span>
+                                            <span class="kpi-txt">Query Performance Gain</span>
+                                        </div>
+                                        <div class="kpi-metric-card">
+                                            <span class="kpi-num">100%</span>
+                                            <span class="kpi-txt">Relational Database Safety</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="project-actions-row">
+                                        <a class="project-btn-premium project-btn-premium--primary" href="project-business-insights.html">
+                                            View Dashboard <i class="fas fa-chart-bar"></i>
+                                        </a>
+                                        <a class="project-btn-premium project-btn-premium--ghost" href="https://github.com/09utkarsh01" target="_blank" rel="noopener">
+                                            <i class="fab fa-github"></i> Repository
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="project-case-visual">
+                                    <div class="visual-card-wrapper" data-tilt data-tilt-max="4" data-tilt-speed="400">
+                                        <div class="visual-glow-background" style="background: radial-gradient(circle, rgba(0, 117, 143, 0.15) 0%, transparent 70%);"></div>
+                                        <div class="visual-frame">
+                                            <img src="assets/images/project Image/business Insights Dashboard.jpg" alt="Cab Booking Operational SQL Insights Screenshot" loading="lazy">
+                                            <div class="visual-overlay-badge"><i class="fas fa-database"></i> SQL Demand Engine</div>
+                                        </div>
+                                        <div class="visual-card-footer">
+                                            <div class="footer-stat"><strong>IMPACT</strong> 🚀 Delivered detailed staging coordinates to operations teams, projecting a 15% reduction in average customer wait times.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
-            </div>
-            <div class="color_svg svg_color">
-                <svg x="0px" y="0px" viewBox="0 186.5 1920 113.5">
-                    <polygon points="0,300 655.167,210.5 1432.5,300 1920,198.5 1920,300 " />
-                </svg>
-            </div>
-        </div>
-        <!-- about-area end -->
-        <!-- service-area start -->
-        <div id="skills" class="service-area service-area-2 ptb-100-70 section-3d section-3d--skills">
-            <div class="container">
-                <div class="section-title section-title-2 text-center">
-                    <h2>Skills &amp; Expertise</h2>
-                    <p class="skills-section-subtitle">Mastering the art of data-driven design and modern technology stacks for exceptional digital experiences.</p>
-                </div>
 
-                <div class="skills-intro">
-                    <p>Explore my comprehensive toolkit that bridges analytics, visualization, and user experience design. Each category represents a specialized domain where I deliver professional-grade solutions.</p>
-                </div>
-
-                <div class="skills-grid">
-                    <!-- Skills Interactive Dashboard (3D horizontal cards + expandable panel + logos) -->
-                    <div class="skills-dashboard" data-skills-dashboard>
-                        <div class="skills-summary-grid" aria-label="Skills categories">
-                            <button class="skill3d-card" type="button" data-skill-card="programming" data-skill-title="Programming Languages" data-skill-summary="1+ Programming Language" aria-expanded="false" aria-controls="skills-detail-panel">
-                                <span class="skill3d-card__fx" aria-hidden="true">
-                                    <span class="skill3d-card__shine"></span>
-                                    <span class="skill3d-card__edge"></span>
-                                </span>
-                                <span class="skill3d-card__media" aria-hidden="true" data-skill-icon="code" data-depth="16">
-                                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M8 9l-3 3 3 3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        <path d="M16 9l3 3-3 3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        <path d="M10.5 18l3-12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                                    </svg>
-                                </span>
-                                <span class="skill3d-card__content" data-depth="10">
-                                    <span class="skill3d-card__title">Programming Languages</span>
-                                    <span class="skill3d-card__highlight">1+ Programming Language</span>
-                                </span>
-                                <span class="skill3d-card__cta" aria-hidden="true" data-depth="6">Expand</span>
-                            </button>
-
-                            <button class="skill3d-card" type="button" data-skill-card="analytics" data-skill-title="Analytics Methods" data-skill-summary="5+ Analytics Methods" aria-expanded="false" aria-controls="skills-detail-panel">
-                                <span class="skill3d-card__fx" aria-hidden="true">
-                                    <span class="skill3d-card__shine"></span>
-                                    <span class="skill3d-card__edge"></span>
-                                </span>
-                                <span class="skill3d-card__media" aria-hidden="true" data-skill-icon="chart" data-depth="16">
-                                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M4 18V6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                                        <path d="M4 18h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                                        <path d="M7 14l3-3 3 2 4-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        <circle cx="7" cy="14" r="1.2" fill="currentColor"/>
-                                        <circle cx="10" cy="11" r="1.2" fill="currentColor"/>
-                                        <circle cx="13" cy="13" r="1.2" fill="currentColor"/>
-                                        <circle cx="17" cy="7" r="1.2" fill="currentColor"/>
-                                    </svg>
-                                </span>
-                                <span class="skill3d-card__content" data-depth="10">
-                                    <span class="skill3d-card__title">Analytics Methods</span>
-                                    <span class="skill3d-card__highlight">5+ Analytics Methods</span>
-                                </span>
-                            
-                                <span class="skill3d-card__cta" aria-hidden="true" data-depth="6">Expand</span>
-                            </button>
-
-                            <button class="skill3d-card" type="button" data-skill-card="visualization" data-skill-title="Visualization Tools" data-skill-summary="2+ Visualization Tools" aria-expanded="false" aria-controls="skills-detail-panel">
-                                <span class="skill3d-card__fx" aria-hidden="true">
-                                    <span class="skill3d-card__shine"></span>
-                                    <span class="skill3d-card__edge"></span>
-                                </span>
-                                <span class="skill3d-card__media" aria-hidden="true" data-skill-icon="viz" data-depth="16">
-                                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M6 17V10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                                        <path d="M12 17V7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                                        <path d="M18 17V12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                                        <path d="M4 17h16" fill="none" stroke="currentColor" stroke-width="" stroke-linecap="round" opacity="0.85"/>
-                                    </svg>
-                                </span>
-                                <span class="skill3d-card__content" data-depth="10">
-                                    <span class="skill3d-card__title">Visualization Tools</span>
-                                    <span class="skill3d-card__highlight">2+ Visualization Tools</span>
-                                </span>
-                                
-                                <span class="skill3d-card__cta" aria-hidden="true" data-depth="6">Expand</span>
-                            </button>
-
-                            <button class="skill3d-card" type="button" data-skill-card="tools" data-skill-title="Professional Tools" data-skill-summary="6+ Professional Tools" aria-expanded="false" aria-controls="skills-detail-panel">
-                                <span class="skill3d-card__fx" aria-hidden="true">
-                                    <span class="skill3d-card__shine"></span>
-                                    <span class="skill3d-card__edge"></span>
-                                </span>
-                                <span class="skill3d-card__media" aria-hidden="true" data-skill-icon="tools" data-depth="16">
-                                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M14.5 7.5l2-2a3.2 3.2 0 014.2 4.2l-2 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                                        <path d="M9.5 16.5l-2 2a3.2 3.2 0 01-4.2-4.2l2-2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                                        <path d="M9 15l6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                                        <circle cx="7.5" cy="16.5" r="1.2" fill="currentColor"/>
-                                        <circle cx="16.5" cy="7.5" r="1.2" fill="currentColor"/>
-                                    </svg>
-                                </span>
-                                <span class="skill3d-card__content" data-depth="10">
-                                    <span class="skill3d-card__title">Professional Tools</span>
-                                    <span class="skill3d-card__highlight">6+ Professional Tools</span>
-                                </span>
-                                
-                                <span class="skill3d-card__cta" aria-hidden="true" data-depth="6">Expand</span>
-                            </button>
-                        </div>
-
-                        <div class="skills-detail" id="skills-detail-panel" role="region" aria-label="Skill details" hidden>
-                            <div class="skills-detail__header">
-                                <div class="skills-detail__title" data-skill-detail-title>Skills</div>
-                                <div class="skills-detail__meta" data-skill-detail-meta>Select a category to view details</div>
-                            </div>
-                            <ul class="skills-detail__list" data-skill-detail-list role="list"></ul>
-                        </div>
-
-                        <!-- Skill logo templates (inline SVG, brand-colored). Replace with vendor-provided SVGs if you require exact official assets. -->
-                        <template data-skill-logo="python">
-                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                                <defs>
-                                    <linearGradient id="py" x1="0" y1="0" x2="1" y2="1">
-                                        <stop offset="0" stop-color="#306998"/>
-                                        <stop offset="1" stop-color="#FFD43B"/>
-                                    </linearGradient>
-                                </defs>
-                                <path d="M12 2c-3.2 0-4.6 1.3-4.6 3.9v2.2h6.1v1.8H5.8C3.3 9.9 2 11.6 2 14c0 3.4 2 5.9 5.4 5.9h2v-2.1c0-2 1.6-3.6 3.6-3.6h5.7c2 0 3.6-1.6 3.6-3.6V5.9C22.3 3.7 20 2 17.1 2H12z" fill="url(#py)" opacity="0.95"/>
-                                <path d="M12 22c3.2 0 4.6-1.3 4.6-3.9v-2.2h-6.1V14h7.7c2.5 0 3.8-1.8 3.8-4.1 0-3.4-2-5.9-5.4-5.9h-2v2.1c0 2-1.6 3.6-3.6 3.6H5.3c-2 0-3.6 1.6-3.6 3.6v4.7C1.7 20.3 4 22 6.9 22H12z" fill="#306998" opacity="0.75"/>
-                                <circle cx="9" cy="6.1" r="1" fill="#fff" opacity="0.95"/>
-                                <circle cx="15" cy="17.9" r="1" fill="#fff" opacity="0.9"/>
-                            </svg>
-                        </template>
-                        <template data-skill-logo="sql">
-                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                                <ellipse cx="12" cy="6.2" rx="7" ry="3" fill="#0E5A8A"/>
-                                <path d="M5 6.2v9.4c0 1.8 3.1 3.4 7 3.4s7-1.6 7-3.4V6.2" fill="#1177BB"/>
-                                <path d="M5 11.2c0 1.8 3.1 3.4 7 3.4s7-1.6 7-3.4" fill="none" stroke="#fff" stroke-opacity="0.35" stroke-width="1"/>
-                                <text x="12" y="17.2" text-anchor="middle" font-family="monospace" font-size="6" fill="#fff">SQL</text>
-                            </svg>
-                        </template>
-                        <template data-skill-logo="powerbi">
-                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                                <rect x="4" y="9" width="3" height="10" rx="1" fill="#F2C811"/>
-                                <rect x="9" y="6" width="3" height="13" rx="1" fill="#F2C811" opacity="0.92"/>
-                                <rect x="14" y="11" width="3" height="8" rx="1" fill="#F2C811" opacity="0.78"/>
-                                <rect x="19" y="13" width="3" height="6" rx="1" fill="#F2C811" opacity="0.62"/>
-                            </svg>
-                        </template>
-                        <template data-skill-logo="tableau">
-                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                                <rect x="3" y="3" width="18" height="18" rx="4" fill="#E97627"/>
-                                <g fill="#fff" opacity="0.95">
-                                    <rect x="11" y="6" width="2" height="12"/>
-                                    <rect x="6" y="11" width="12" height="2"/>
-                                    <rect x="9" y="8" width="2" height="8" opacity="0.75"/>
-                                    <rect x="13" y="8" width="2" height="8" opacity="0.75"/>
-                                    <rect x="8" y="9" width="8" height="2" opacity="0.55"/>
-                                    <rect x="8" y="13" width="8" height="2" opacity="0.55"/>
-                                </g>
-                            </svg>
-                        </template>
-                        <template data-skill-logo="excel">
-                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                                <rect x="4" y="3" width="16" height="18" rx="3" fill="#1D6F42"/>
-                                <rect x="9" y="6" width="9" height="12" rx="2" fill="#185C37" opacity="0.9"/>
-                                <path d="M7.2 9l2.2 3-2.2 3" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M9.4 9l-2.2 3 2.2 3" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.92"/>
-                            </svg>
-                        </template>
-                        <template data-skill-logo="mysql">
-                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                                <ellipse cx="12" cy="6.2" rx="7" ry="3" fill="#00758F"/>
-                                <path d="M5 6.2v9.6c0 1.9 3.1 3.5 7 3.5s7-1.6 7-3.5V6.2" fill="#0093B1"/>
-                                <path d="M5 11.4c0 1.9 3.1 3.5 7 3.5s7-1.6 7-3.5" fill="none" stroke="#fff" stroke-opacity="0.35" stroke-width="1"/>
-                                <path d="M5 15.2c0 1.9 3.1 3.5 7 3.5s7-1.6 7-3.5" fill="none" stroke="#fff" stroke-opacity="0.25" stroke-width="1"/>
-                            </svg>
-                        </template>
-                        <template data-skill-logo="git">
-                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                                <path d="M12 2.8l9.2 9.2c0.4 0.4 0.4 1 0 1.4L12 22.6 2.8 13.4c-0.4-0.4-0.4-1 0-1.4L12 2.8z" fill="#F05032"/>
-                                <path d="M8.5 11.4l1.7 1.7v3.6" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round"/>
-                                <path d="M8.5 11.4l3.6-3.6 3.5 3.5" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-                                <circle cx="8.5" cy="11.4" r="1.4" fill="#fff"/>
-                                <circle cx="12.1" cy="7.8" r="1.4" fill="#fff"/>
-                                <circle cx="12.1" cy="16.7" r="1.4" fill="#fff"/>
-                            </svg>
-                        </template>
-                        <template data-skill-logo="figma">
-                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                                <path d="M9 2h3.5a3.5 3.5 0 010 7H9V2z" fill="#F24E1E"/>
-                                <path d="M9 9h3.5a3.5 3.5 0 010 7H9V9z" fill="#A259FF"/>
-                                <path d="M9 16h3.5a3.5 3.5 0 11-3.5 3.5V16z" fill="#0ACF83"/>
-                                <path d="M5.5 5.5A3.5 3.5 0 019 2v7H5.5a3.5 3.5 0 010-7z" fill="#FF7262"/>
-                                <path d="M5.5 12.5A3.5 3.5 0 019 9v7H5.5a3.5 3.5 0 010-7z" fill="#1ABCFE"/>
-                            </svg>
-                        </template>
-                        <template data-skill-logo="dash">
-                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                                <rect x="3" y="5" width="18" height="14" rx="3" fill="#111" opacity="0.65"/>
-                                <rect x="6" y="8" width="4" height="5" rx="1" fill="#00E5FF" opacity="0.85"/>
-                                <rect x="11" y="10" width="4" height="3" rx="1" fill="#76FF03" opacity="0.85"/>
-                                <rect x="16" y="12" width="4" height="5" rx="1" fill="#FFC400" opacity="0.85"/>
-                            </svg>
-                        </template>
-                        <template data-skill-logo="dataviz">
-                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                                <circle cx="8" cy="12" r="3.2" fill="#00E5FF" opacity="0.38"/>
-                                <circle cx="15.5" cy="14.5" r="2.7" fill="#FFC400" opacity="0.45"/>
-                                <path d="M4 18c3.2-4 6.2-5 10.4-2.1 2.1 1.4 4.2 1 5.6-0.8" fill="none" stroke="#76FF03" stroke-width="2" stroke-linecap="round"/>
-                            </svg>
-                        </template>
-                        <template data-skill-logo="clean">
-                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                                <path d="M7 14l6-6 3 3-6 6H7v-3z" fill="#00E5FF" opacity="0.85"/>
-                                <path d="M14 5l5 5" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
-                                <path d="M5 20h14" fill="none" stroke="#FFC400" stroke-width="2" stroke-linecap="round" opacity="0.8"/>
-                            </svg>
-                        </template>
-                        <template data-skill-logo="eda">
-                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                                <rect x="4" y="5" width="12" height="12" rx="3" fill="#111" opacity="0.55"/>
-                                <path d="M6 14l3-3 2 2 3-4" fill="none" stroke="#00E5FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                <circle cx="16.8" cy="16.8" r="3.2" fill="none" stroke="#FFC400" stroke-width="2"/>
-                                <path d="M19.2 19.2l2 2" fill="none" stroke="#FFC400" stroke-width="2" stroke-linecap="round"/>
-                            </svg>
-                        </template>
-                        <template data-skill-logo="stats">
-                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                                <path d="M5 18V7" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
-                                <path d="M5 18h14" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
-                                <rect x="7" y="12" width="2.6" height="6" rx="1" fill="#76FF03" opacity="0.85"/>
-                                <rect x="11" y="9" width="2.6" height="9" rx="1" fill="#00E5FF" opacity="0.85"/>
-                                <rect x="15" y="6" width="2.6" height="12" rx="1" fill="#FFC400" opacity="0.85"/>
-                            </svg>
-                        </template>
-                        <template data-skill-logo="interpret">
-                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                                <path d="M3.5 12s3.2-6 8.5-6 8.5 6 8.5 6-3.2 6-8.5 6-8.5-6-8.5-6z" fill="#00E5FF" opacity="0.22"/>
-                                <circle cx="12" cy="12" r="3" fill="#00E5FF" opacity="0.8"/>
-                                <circle cx="12" cy="12" r="1.2" fill="#111" opacity="0.7"/>
-                                <path d="M6 20h12" fill="none" stroke="#FFC400" stroke-width="2" stroke-linecap="round" opacity="0.75"/>
-                            </svg>
-                        </template>
-                        <template data-skill-logo="insight">
-                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                                <path d="M12 3a7 7 0 00-4.2 12.6c.6.5 1.2 1.4 1.2 2.4V19h6v-1c0-1 .6-1.9 1.2-2.4A7 7 0 0012 3z" fill="#FFC400" opacity="0.75"/>
-                                <path d="M10 21h4" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
-                                <path d="M9.2 12.2l1.8-1.2 1.6 1.2 2.2-2.8" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.65"/>
-                            </svg>
-                        </template>
+                <!-- Navigation Indicator Dots / Active Progress Line -->
+                <div class="project-showcase-footer">
+                    <div class="project-progress-track">
+                        <div class="project-progress-bar" id="projectProgressBar" style="width: 20%;"></div>
                     </div>
-                </div>
-            </div>
-            <div class="ab-color_svg ab-svg_color">
-                <svg x="0px" y="0px" viewBox="0 186.5 1920 113.5">
-                    <polygon points="0,300 655.167,210.5 1432.5,300 1920,198.5 1920,300 " />
-                </svg>
-            </div>
-        </div>
-        <!--Start project area-->
-        <section id="project" class="gallery-section gallery-section-2 ptb-100-70 section-3d section-3d--projects" data-level-num="3" data-level-name="MISSION LOGS">
-            <div class="container">
-                <!-- Projects Section Upgrade (Analytics showcase) -->
-                <div class="section-title section-title-2 text-center">
-                    <h2>Projects</h2>
-                    <p class="projects-section-subtitle">Selected data analytics and dashboard work focused on clarity, decision-making, and measurable impact.</p>
-                </div>
-
-                <div class="projects-grid" aria-label="Analytics projects">
-                    <article class="project-card" data-project="dmart">
-                        <div class="project-card__media">
-                            <img src="assets/images/project Image/D-mart Sales Dashboard.png" alt="D-Mart Sales Dashboard preview" loading="lazy" decoding="async">
-</xai:function_call}
-
-
-<xai:function_call name="edit_file">
-<parameter name="path">index.html
-                        </div>
-                        <div class="project-card__body">
-                            <h3 class="project-card__title">D-Mart Sales Dashboard</h3>
-
-                            <div class="project-card__tools" aria-label="Tools used">
-                                <span class="tool-pill tool-pill--powerbi">
-                                    <span class="tool-pill__icon" aria-hidden="true">
-                                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                            <rect x="4" y="9" width="3" height="10" rx="1" fill="#F2C811"/>
-                                            <rect x="9" y="6" width="3" height="13" rx="1" fill="#F2C811" opacity="0.92"/>
-                                            <rect x="14" y="11" width="3" height="8" rx="1" fill="#F2C811" opacity="0.78"/>
-                                            <rect x="19" y="13" width="3" height="6" rx="1" fill="#F2C811" opacity="0.62"/>
-                                        </svg>
-                                    </span>
-                                    Power BI
-                                </span>
-                                <span class="tool-pill tool-pill--excel">
-                                    <span class="tool-pill__icon" aria-hidden="true">
-                                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                            <rect x="4" y="3" width="16" height="18" rx="3" fill="#1D6F42"/>
-                                            <rect x="9" y="6" width="9" height="12" rx="2" fill="#185C37" opacity="0.92"/>
-                                            <path d="M7.2 9l2.2 3-2.2 3" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M9.4 9l-2.2 3 2.2 3" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.9"/>
-                                        </svg>
-                                    </span>
-                                    Excel
-                                </span>
-                            </div>
-
-                            <p class="project-card__desc">Designed an interactive dashboard to analyze regional sales performance and identify top-performing products and regions. Demonstrates strong data visualization skills and business insight generation.</p>
-
-                            <div class="project-card__actions" aria-label="Project actions">
-                                <a class="project-btn project-btn--primary" href="project-dmart.html">View Dashboard</a>
-                                <a class="project-btn project-btn--ghost" href="https://github.com/repos" target="_blank" rel="noopener">View GitHub</a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="project-card" data-project="biz-insights">
-                        <div class="project-card__media">
-                            <img src="assets/images/project Image/business Insights Dashboard.jpg" alt="Business Insights Dashboard preview" loading="lazy" decoding="async">
-
-                        </div>
-                        <div class="project-card__body">
-                            <h3 class="project-card__title">Business Insights Dashboard</h3>
-
-                            <div class="project-card__tools" aria-label="Tools used">
-                                <span class="tool-pill tool-pill--tableau">
-                                    <span class="tool-pill__icon" aria-hidden="true">
-                                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                            <rect x="3" y="3" width="18" height="18" rx="4" fill="#E97627"/>
-                                            <g fill="#fff" opacity="0.95">
-                                                <rect x="11" y="6" width="2" height="12"/>
-                                                <rect x="6" y="11" width="12" height="2"/>
-                                                <rect x="9" y="8" width="2" height="8" opacity="0.75"/>
-                                                <rect x="13" y="8" width="2" height="8" opacity="0.75"/>
-                                            </g>
-                                        </svg>
-                                    </span>
-                                    Tableau
-                                </span>
-                                <span class="tool-pill tool-pill--mysql">
-                                    <span class="tool-pill__icon" aria-hidden="true">
-                                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                            <ellipse cx="12" cy="6.2" rx="7" ry="3" fill="#00758F"/>
-                                            <path d="M5 6.2v9.6c0 1.9 3.1 3.5 7 3.5s7-1.6 7-3.5V6.2" fill="#0093B1"/>
-                                            <path d="M5 11.4c0 1.9 3.1 3.5 7 3.5s7-1.6 7-3.5" fill="none" stroke="#fff" stroke-opacity="0.35" stroke-width="1"/>
-                                        </svg>
-                                    </span>
-                                    MySQL
-                                </span>
-                            </div>
-
-                            <p class="project-card__desc">Built a business intelligence dashboard to analyze monthly revenue trends and customer segments. Focused on transforming raw data into meaningful insights for strategic decision-making.</p>
-
-                            <div class="project-card__actions" aria-label="Project actions">
-                                <a class="project-btn project-btn--primary" href="project-business-insights.html">View Dashboard</a>
-                                <a class="project-btn project-btn--ghost" href="https://github.com/repos" target="_blank" rel="noopener">View GitHub</a>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-
-               
-            </div>
-            <div class="color_svg svg_color">
-                <svg x="0px" y="0px" viewBox="0 186.5 1920 113.5">
-                    <polygon points="0,300 655.167,210.5 1432.5,300 1920,198.5 1920,300 " />
-                </svg>
-            </div>
-        </section>
-        <!--End project area-->
-
-        <!-- .contact-item start -->
-        <div id="Contact" class="contact-area contact-area-2 section-padding section-3d section-3d--contact" data-level-num="4" data-level-name="THE UPLINK">
-            <div class="container">
-                <!-- Contact Section Upgrade (clean contact panel, no form) -->
-                <div class="section-title section-title-2 text-center">
-                    <h2>Contact</h2>
-                    <p class="contact-section-subtitle">Let’s connect and build something meaningful together.</p>
-                </div>
-
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2 col-sm-12">
-                        <div class="contact-panel glass-card" aria-label="Contact information">
-                            <ul class="contact-list" role="list">
-                                <li class="contact-list__item">
-                                    <span class="contact-list__icon" aria-hidden="true">
-                                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M7 3h3l1 5-2 1c1 3 3 5 6 6l1-2 5 1v3c0 1-1 2-2 2-9 0-16-7-16-16 0-1 1-2 2-2z" fill="currentColor" opacity="0.9"/>
-                                        </svg>
-                                    </span>
-                                    <span class="contact-list__label">Phone</span>
-                                    <a class="contact-list__value" href="tel:+919118944663">+91 9118944663</a>
-                                </li>
-
-                                <li class="contact-list__item">
-                                    <span class="contact-list__icon" aria-hidden="true">
-                                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M4 6.5A2.5 2.5 0 016.5 4h11A2.5 2.5 0 0120 6.5v11A2.5 2.5 0 0117.5 20h-11A2.5 2.5 0 014 17.5v-11z" fill="currentColor" opacity="0.18"/>
-                                            <path d="M6.5 7h11L12 12 6.5 7z" fill="currentColor" opacity="0.95"/>
-                                            <path d="M6.5 17V8.4l5.2 4.6c.2.2.6.2.8 0L17.5 8.4V17h-11z" fill="currentColor" opacity="0.55"/>
-                                        </svg>
-                                    </span>
-                                    <span class="contact-list__label">Email</span>
-                                    <a class="contact-list__value" href="mailto:09utkarshsingh01@gmail.com">09utkarshsingh01@gmail.com</a>
-                                </li>
-
-                                <li class="contact-list__item">
-                                    <span class="contact-list__icon" aria-hidden="true">
-                                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M12 2.8a7.2 7.2 0 00-7.2 7.2c0 5.4 7.2 11.2 7.2 11.2S19.2 15.4 19.2 10A7.2 7.2 0 0012 2.8z" fill="currentColor" opacity="0.22"/>
-                                            <circle cx="12" cy="10" r="2.6" fill="currentColor" opacity="0.95"/>
-                                        </svg>
-                                    </span>
-                                    <span class="contact-list__label">Location</span>
-                                    <span class="contact-list__value">Lucknow, India</span>
-                                </li>
-                            </ul>
-
-                            <div class="contact-social" aria-label="Social links">
-                                <a class="contact-social__link contact-social__link--linkedin" href="https://www.linkedin.com/in/utkarsh-singh-fc9119" target="_blank" rel="noopener" aria-label="LinkedIn">
-                                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                                        <path fill="#0A66C2" d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.11 1 2.48 1 4.98 2.12 4.98 3.5z"/>
-                                        <path fill="#0A66C2" d="M.5 7.5H4.5V23.5H.5z"/>
-                                        <path fill="#0A66C2" d="M8 7.5h3.8v2.2h.1c.5-1 1.8-2.3 3.8-2.3 4.1 0 4.9 2.7 4.9 6.1v10H16.6v-8.9c0-2.1 0-4.8-2.9-4.8-2.9 0-3.4 2.3-3.4 4.6v9.1H8z"/>
-                                    </svg>
-                                </a>
-
-                                <a class="contact-social__link contact-social__link--github" href="https://github.com/09utkarsh01" target="_blank" rel="noopener" aria-label="GitHub">
-                                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                                        <path fill="#ffffff" d="M12 .8a11.2 11.2 0 00-3.5 21.9c.6.1.8-.3.8-.6v-2.1c-3.2.7-3.9-1.3-3.9-1.3-.5-1.2-1.2-1.5-1.2-1.5-1-.7.1-.7.1-.7 1.1.1 1.7 1.1 1.7 1.1 1 .1 1.6.1 2 .1.1-.7.4-1.2.7-1.5-2.6-.3-5.3-1.3-5.3-5.9 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 015.8 0C16.2 2.3 17.2 2.6 17.2 2.6c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.6-2.7 5.6-5.3 5.9.4.3.8 1 .8 2.1v3.1c0 .3.2.7.8.6A11.2 11.2 0 0012 .8z"/>
-                                    </svg>
-                                </a>
-
-                                <a class="contact-social__link contact-social__link--email" href="mailto:09utkarshsingh01@gmail.com" aria-label="Email">
-                                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                                        <path d="M4 6.5A2.5 2.5 0 016.5 4h11A2.5 2.5 0 0120 6.5v11A2.5 2.5 0 0117.5 20h-11A2.5 2.5 0 014 17.5v-11z" fill="#3ECF8E" opacity="0.25"/>
-                                        <path d="M6.5 7h11L12 12 6.5 7z" fill="#3ECF8E" opacity="0.95"/>
-                                        <path d="M6.5 17V8.4l5.2 4.6c.2.2.6.2.8 0L17.5 8.4V17h-11z" fill="#ffffff" opacity="0.35"/>
-                                    </svg>
-                                </a>
-                            </div>
-
-                            <div class="contact-cta">
-                                <a class="contact-email-btn" href="mailto:09utkarshsingh01@gmail.com">Send Email</a>
-                            </div>
-                        </div>
+                    <div class="project-indicator-dots" id="projectIndicatorDots">
+                        <button class="indicator-dot active" data-go-to="0" aria-label="Go to project 1"></button>
+                        <button class="indicator-dot" data-go-to="1" aria-label="Go to project 2"></button>
+                        <button class="indicator-dot" data-go-to="2" aria-label="Go to project 3"></button>
+                        <button class="indicator-dot" data-go-to="3" aria-label="Go to project 4"></button>
+                        <button class="indicator-dot" data-go-to="4" aria-label="Go to project 5"></button>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- .contact-item end -->
-        <!-- footer-area start -->
-        <div class="footer-area">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 col-sm-6 col-12">
-                        <div class="footer-image">
-                            <div class="digital-signature">
-                                UTKARSH_SINGH
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-sm-6 col-12">
-                        <div class="footer-sub">
-                            <div class="coordinates-widget">
-                                <div class="coordinate-pulse"></div>
-                                <span>LKO_TERMINAL // NODE_0522 // 26.8467&deg; N, 80.9462&deg; E</span>
-                            </div>
-                            <p class="footer-meta">[ SYSTEM_ENCODED_v2.0 // &copy; 2026 ]</p>
-                        </div>
-                    </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact" class="contact-section section-padding">
+        <div class="container">
+            <div class="section-header reveal-fade" style="text-align: center;">
+                <span class="section-label">Get In Touch</span>
+                <h2 class="section-title">Contact</h2>
+                <p class="section-subtitle" style="margin: 16px auto 0;">Let's connect and build something meaningful
+                    together.</p>
+            </div>
+
+            <div class="contact-panel reveal-fade delay-1">
+                <ul class="contact-list" role="list">
+                    <li class="contact-list__item">
+                        <span class="contact-list__icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7 3h3l1 5-2 1c1 3 3 5 6 6l1-2 5 1v3c0 1-1 2-2 2-9 0-16-7-16-16 0-1 1-2 2-2z"
+                                    fill="currentColor" opacity="0.9" />
+                            </svg>
+                        </span>
+                        <span class="contact-list__label">Phone</span>
+                        <a class="contact-list__value" href="tel:+919118944663">+91 9118944663</a>
+                    </li>
+                    <li class="contact-list__item">
+                        <span class="contact-list__icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M4 6.5A2.5 2.5 0 016.5 4h11A2.5 2.5 0 0120 6.5v11A2.5 2.5 0 0117.5 20h-11A2.5 2.5 0 014 17.5v-11z"
+                                    fill="currentColor" opacity="0.18" />
+                                <path d="M6.5 7h11L12 12 6.5 7z" fill="currentColor" opacity="0.95" />
+                                <path d="M6.5 17V8.4l5.2 4.6c.2.2.6.2.8 0L17.5 8.4V17h-11z" fill="currentColor"
+                                    opacity="0.55" />
+                            </svg>
+                        </span>
+                        <span class="contact-list__label">Email</span>
+                        <a class="contact-list__value"
+                            href="mailto:09utkarshsingh01@gmail.com">09utkarshsingh01@gmail.com</a>
+                    </li>
+                    <li class="contact-list__item">
+                        <span class="contact-list__icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12 2.8a7.2 7.2 0 00-7.2 7.2c0 5.4 7.2 11.2 7.2 11.2S19.2 15.4 19.2 10A7.2 7.2 0 0012 2.8z"
+                                    fill="currentColor" opacity="0.22" />
+                                <circle cx="12" cy="10" r="2.6" fill="currentColor" opacity="0.95" />
+                            </svg>
+                        </span>
+                        <span class="contact-list__label">Location</span>
+                        <span class="contact-list__value">Lucknow, India</span>
+                    </li>
+                </ul>
+
+                <div class="contact-social" aria-label="Social links">
+                    <a class="contact-social__link contact-social__link--linkedin"
+                        href="https://www.linkedin.com/in/utkarsh-singh-fc9119" target="_blank" rel="noopener"
+                        aria-label="LinkedIn">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path fill="#0A66C2"
+                                d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.11 1 2.48 1 4.98 2.12 4.98 3.5z" />
+                            <path fill="#0A66C2" d="M.5 7.5H4.5V23.5H.5z" />
+                            <path fill="#0A66C2"
+                                d="M8 7.5h3.8v2.2h.1c.5-1 1.8-2.3 3.8-2.3 4.1 0 4.9 2.7 4.9 6.1v10H16.6v-8.9c0-2.1 0-4.8-2.9-4.8-2.9 0-3.4 2.3-3.4 4.6v9.1H8z" />
+                        </svg>
+                    </a>
+                    <a class="contact-social__link contact-social__link--github" href="https://github.com/09utkarsh01"
+                        target="_blank" rel="noopener" aria-label="GitHub">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path fill="#ffffff"
+                                d="M12 .8a11.2 11.2 0 00-3.5 21.9c.6.1.8-.3.8-.6v-2.1c-3.2.7-3.9-1.3-3.9-1.3-.5-1.2-1.2-1.5-1.2-1.5-1-.7.1-.7.1-.7 1.1.1 1.7 1.1 1.7 1.1 1 .1 1.6.1 2 .1.1-.7.4-1.2.7-1.5-2.6-.3-5.3-1.3-5.3-5.9 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 015.8 0C16.2 2.3 17.2 2.6 17.2 2.6c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.6-2.7 5.6-5.3 5.9.4.3.8 1 .8 2.1v3.1c0 .3.2.7.8.6A11.2 11.2 0 0012 .8z" />
+                        </svg>
+                    </a>
+                    <a class="contact-social__link contact-social__link--email" href="mailto:09utkarshsingh01@gmail.com"
+                        aria-label="Email">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M4 6.5A2.5 2.5 0 016.5 4h11A2.5 2.5 0 0120 6.5v11A2.5 2.5 0 0117.5 20h-11A2.5 2.5 0 014 17.5v-11z"
+                                fill="#3ECF8E" opacity="0.25" />
+                            <path d="M6.5 7h11L12 12 6.5 7z" fill="#3ECF8E" opacity="0.95" />
+                            <path d="M6.5 17V8.4l5.2 4.6c.2.2.6.2.8 0L17.5 8.4V17h-11z" fill="#ffffff" opacity="0.35" />
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="contact-cta">
+                    <a class="contact-email-btn" href="mailto:09utkarshsingh01@gmail.com">
+                        <i class="fas fa-envelope"></i> Send Email
+                    </a>
                 </div>
             </div>
         </div>
-        <!-- footer-area end -->
+    </section>
 
-    </div>
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3>Utkarsh Singh</h3>
+                    <p>Transforming complex data into predictive insights and world-class digital experiences.</p>
+                </div>
+                <div class="footer-nav">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#introduction">Introduction</a></li>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#project">Projects</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Connect</h4>
+                    <div class="footer-social-links">
+                        <a href="https://www.linkedin.com/in/utkarsh-singh-fc9119" target="_blank" rel="noopener"
+                            aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/09utkarsh01" target="_blank" rel="noopener" aria-label="GitHub"><i
+                                class="fab fa-github"></i></a>
+                        <a href="mailto:09utkarshsingh01@gmail.com" aria-label="Email"><i
+                                class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Utkarsh Singh. All rights reserved.</p>
+                <div>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms</a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
 
-    <!-- Background visuals are handled per-section (removed particles + global grid). -->
+    <!-- Back to top -->
+    <a href="#home" class="back-to-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></a>
 
-    <!-- All JavaScript files
-    ================================================== -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- VanillaTilt (4KB, lightweight 3D tilt) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
-    <script src="assets/js/owl.carousel.min.js"></script>
 
-    <!-- Plugins for this template -->
-    <script src="assets/js/jquery-plugin-collection.js"></script>
-
-    <!-- Game Libraries -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.17.1/matter.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
-
-    <!-- Custom script for this template -->
+    <!-- Main Script -->
     <script src="assets/js/script.js"></script>
-    <!-- Game Navigation script -->
-    <script src="assets/js/game-navigation.js"></script>
-    <!-- Level System script -->
-    <script src="assets/js/level-system.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,473 @@
+/* ==========================================================
+   CINEMATIC INTRODUCTION — Full-Screen Video Landing
+   ========================================================== */
+
+/* --- Section Base --- */
+.cin-intro {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  height: 100dvh;
+  overflow: hidden;
+  background: #02060e;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 135px;
+  padding-bottom: 55px;
+  padding-left: 24px;
+  padding-right: 24px;
+  box-sizing: border-box;
+}
+
+/* --- Ambient Orbs --- */
+.cin-intro__bg {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.cin-intro__orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(100px);
+  opacity: 0.35;
+}
+
+.cin-intro__orb--1 {
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(212, 175, 55, 0.15), transparent 60%);
+  top: -15%;
+  right: -10%;
+  animation: cinOrbFloat 20s ease-in-out infinite;
+}
+
+.cin-intro__orb--2 {
+  width: 450px;
+  height: 450px;
+  background: radial-gradient(circle, rgba(77, 196, 255, 0.1), transparent 60%);
+  bottom: -15%;
+  left: -10%;
+  animation: cinOrbFloat 25s ease-in-out infinite reverse;
+}
+
+/* --- Video Wrapper --- */
+.cin-intro__video-wrap {
+  position: relative;
+  width: 90%;
+  max-width: 1080px;
+  aspect-ratio: 16 / 9;
+  z-index: 2;
+  background: #000;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 
+    0 25px 80px rgba(0, 0, 0, 0.85),
+    0 0 50px rgba(212, 175, 55, 0.15);
+  border: 1.5px solid rgba(255, 255, 255, 0.08);
+  transition: all 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+@media (min-aspect-ratio: 16/9) and (min-width: 768px) {
+  .cin-intro__video-wrap {
+    width: calc((100vh - 220px) * 16 / 9);
+  }
+}
+
+@media (max-height: 580px) {
+  .cin-intro {
+    padding-top: 80px;
+    padding-bottom: 30px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .cin-intro__video-wrap {
+    width: calc((100vh - 120px) * 16 / 9);
+  }
+}
+
+.cin-intro__video-wrap:hover {
+  transform: translateY(-4px) scale(1.008);
+  box-shadow: 
+    0 35px 90px rgba(0, 0, 0, 0.9),
+    0 0 65px rgba(212, 175, 55, 0.25);
+  border-color: rgba(212, 175, 55, 0.35);
+}
+
+.cin-intro__video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  background: #000;
+}
+
+/* --- Vignette Overlay --- */
+.cin-intro__vignette {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+  background: radial-gradient(circle at center, transparent 60%, rgba(2, 6, 14, 0.45) 100%);
+  transition: opacity 0.3s ease;
+}
+
+.cin-intro__video-wrap:hover .cin-intro__vignette {
+  opacity: 0.25;
+}
+
+/* --- Premium Player Header Bar --- */
+.cin-intro__player-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 44px;
+  background: linear-gradient(to bottom, rgba(2, 6, 14, 0.85), rgba(2, 6, 14, 0));
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  z-index: 5;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+  pointer-events: none;
+  opacity: 0.85;
+  transition: opacity 0.3s ease;
+}
+
+.cin-intro__video-wrap:hover .cin-intro__player-header {
+  opacity: 1;
+}
+
+.cin-intro__player-status {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.cin-intro__player-dot {
+  width: 7px;
+  height: 7px;
+  background-color: #d4af37;
+  border-radius: 50%;
+  box-shadow: 0 0 8px #d4af37;
+  animation: cinDotPulse 1.5s infinite alternate;
+}
+
+@keyframes cinDotPulse {
+  0% { opacity: 0.4; }
+  100% { opacity: 1; }
+}
+
+.cin-intro__player-status-text {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.65);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.cin-intro__player-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.45);
+  letter-spacing: 0.05em;
+}
+
+.cin-intro__player-badge {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 9px;
+  font-weight: 700;
+  color: #d4af37;
+  background: rgba(212, 175, 55, 0.1);
+  border: 1px solid rgba(212, 175, 55, 0.2);
+  padding: 2px 8px;
+  border-radius: 12px;
+  letter-spacing: 0.05em;
+}
+
+/* --- Center Play/Unmute Toggle --- */
+.cin-intro__play-toggle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  z-index: 10;
+  width: 86px;
+  height: 86px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(2, 6, 14, 0.65);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1.5px solid rgba(212, 175, 55, 0.35);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 
+    0 15px 35px rgba(0, 0, 0, 0.6),
+    0 0 25px rgba(212, 175, 55, 0.15);
+}
+
+.cin-intro__play-toggle:hover {
+  background: rgba(212, 175, 55, 0.2);
+  border-color: #d4af37;
+  transform: translate(-50%, -50%) scale(1.1);
+  box-shadow: 
+    0 20px 45px rgba(0, 0, 0, 0.7),
+    0 0 35px rgba(212, 175, 55, 0.35);
+}
+
+.cin-intro__play-icon {
+  color: #fff;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.cin-intro__play-toggle:hover .cin-intro__play-icon {
+  transform: scale(1.1);
+}
+
+/* Hidden state after unmute */
+.cin-intro__play-toggle.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%) scale(0.7);
+}
+
+/* --- Center Play/Unmute Label --- */
+.cin-intro__play-label {
+  position: absolute;
+  top: calc(100% + 14px);
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  color: #d4af37;
+  background: rgba(2, 6, 14, 0.75);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(212, 175, 55, 0.25);
+  padding: 6px 14px;
+  border-radius: 20px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+  animation: cinLabelPulse 1.8s infinite alternate;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+.cin-intro__play-toggle:hover .cin-intro__play-label {
+  background: rgba(212, 175, 55, 0.15);
+  border-color: #d4af37;
+  color: #fff;
+  box-shadow: 0 8px 30px rgba(212, 175, 55, 0.2);
+}
+
+@keyframes cinLabelPulse {
+  0% {
+    opacity: 0.85;
+    transform: translateX(-50%) scale(0.98);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(-50%) scale(1.02);
+    border-color: rgba(212, 175, 55, 0.45);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5), 0 0 12px rgba(212, 175, 55, 0.2);
+  }
+}
+
+/* --- Bottom Section: Center Scroll Arrow --- */
+.cin-intro__bottom {
+  position: absolute;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 15;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+}
+
+/* --- Brand Info (Bottom Left) --- */
+.cin-intro__brand {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  animation: cinFadeUp 1s ease 0.5s both;
+}
+
+.cin-intro__name {
+  font-family: 'Space Grotesk', 'Inter', sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.92);
+  letter-spacing: 0.04em;
+}
+
+.cin-intro__role {
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.45);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+/* --- Scroll Arrow (Bottom Right) --- */
+.cin-intro__scroll-arrow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  pointer-events: auto;
+  cursor: pointer;
+  animation: cinFadeUp 1s ease 0.8s both;
+  transition: transform 0.35s ease;
+}
+
+.cin-intro__scroll-arrow:hover {
+  transform: translateY(-4px);
+}
+
+.cin-intro__scroll-text {
+  font-family: 'Inter', sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.55);
+  transition: color 0.3s ease;
+}
+
+.cin-intro__scroll-arrow:hover .cin-intro__scroll-text {
+  color: rgba(212, 175, 55, 0.9);
+}
+
+.cin-intro__arrow-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  color: rgba(212, 175, 55, 0.7);
+  font-size: 12px;
+  animation: cinArrowBounce 2s ease-in-out infinite;
+}
+
+.cin-intro__arrow-line {
+  width: 1.5px;
+  height: 28px;
+  background: linear-gradient(to bottom, transparent, rgba(212, 175, 55, 0.5));
+  border-radius: 2px;
+}
+
+/* --- Keyframes --- */
+@keyframes cinOrbFloat {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(25px, -20px) scale(1.04); }
+  66% { transform: translate(-15px, 15px) scale(0.96); }
+}
+
+@keyframes cinBtnPulse {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.12);
+  }
+  50% {
+    box-shadow: 0 0 0 18px rgba(255, 255, 255, 0);
+  }
+}
+
+@keyframes cinFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes cinArrowBounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(8px); }
+}
+
+/* ===========================
+   RESPONSIVE
+   =========================== */
+
+@media (max-width: 991px) {
+  .cin-intro__bottom {
+    bottom: 20px;
+  }
+
+  .cin-intro__play-toggle {
+    width: 74px;
+    height: 74px;
+  }
+
+  .cin-intro__play-icon {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .cin-intro {
+    padding-top: 95px;
+    padding-bottom: 35px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .cin-intro__bottom {
+    bottom: 16px;
+  }
+
+  .cin-intro__play-toggle {
+    width: 66px;
+    height: 66px;
+  }
+
+  .cin-intro__play-icon {
+    font-size: 18px;
+  }
+
+  .cin-intro__scroll-text {
+    font-size: 9px;
+  }
+
+  .cin-intro__arrow-line {
+    height: 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  .cin-intro__bottom {
+    bottom: 12px;
+  }
+
+  .cin-intro__play-toggle {
+    width: 58px;
+    height: 58px;
+  }
+}
+
+
